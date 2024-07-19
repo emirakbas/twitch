@@ -2,3 +2,66 @@ html {
     background-color: black;
 }
 
+body {
+    display: flex;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.panel_left {
+    display: flex;
+    position: absolute;
+    justify-content: start;
+    align-items: start;
+    margin-top: 4%;
+    width: 12%;
+    height: 100vh;
+}
+
+.search_bar {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4.5vh;
+    margin-left: 0;
+}
+
+.panel_main {
+    position: relative;
+    margin-top: 2.7%;
+    margin-left: 12%;
+    width: 90%;
+    height: 100%;
+}
+
+.panel_main_first {
+    display: flex;
+    position: relative;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 30%;
+}
+
+.spreader_bar1 {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 2%;
+}
+
+.panel_main_second {
+    display: flex;
+    position: absolute;
+    justify-content: start;
+    align-items: start;
+    margin-top: 25%;
+    width: 100%;
+    height: 30%;
+}
