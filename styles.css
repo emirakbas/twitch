@@ -5,8 +5,8 @@
 }
 
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: black;
 }
 
@@ -14,9 +14,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    min-width: 600px; /* İçeri doğru arkaplandaki siyah rengin sızmasını engelliyor. */
-    height: 50px;
+    width: 100vw;
+    height: 5vw;
     background-color: #18181b;
 }
 
@@ -26,30 +25,25 @@ header {
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 20%;
-    margin-left: 10px;
-    min-width: 200px;
+    width: 20vw;
+    margin-left: 2vw;
     height: 100%;
-    background-color: #18181b;
 }
 
 .header_center {
     display: flex;
     align-items: center;
-    width: 25%;
+    width: 27vw;
     height: 100%;
-    min-width: 350px;
-    background-color: #18181b;
 }
 
 .header_right {
     display: flex;
     justify-content: right;
     align-items: center;
-    width: 20%;
-    min-width: 200px;
+    width: 20vw;
     height: 100%;
-    margin-right: 15px;
+    margin-right: 2vw;
     background-color: #18181b;
 }
 
@@ -63,13 +57,12 @@ button:hover {
 
 
 .header_left svg {
-    width: 30px;
-    height: 30px;
+    width: 3vw;
+    height: 3vw;
 }
 
 .icon-container {
-    margin-top: 10px;
-    display: inline-block;
+    display: flex;
     position: relative;
     color: #ab76fb;
 }
@@ -102,8 +95,8 @@ button:hover {
 .header_left #gozat {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    margin-left: 30px;
+    font-size: 2vw;
+    margin-left: 3vw;
     font-weight: 700;
 }
 
@@ -121,14 +114,16 @@ header #gozat:active {
     align-items: center;
     border-radius: 5px;
     color: white;
-    margin-left: 30px;
-    width: 30px;
-    height: 30px;
+    margin-left: 3vw;
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
     'GRAD' 0,
     'opsz' 24
+}
+
+header #three_dots_list {
+    font-size: 3vw;
 }
 
 header #three_dots_list:hover {
@@ -141,15 +136,15 @@ header #three_dots_list:active {
 }
 
 .header_center input {
-    width: 100%;
-    height: 70%;
+    width: 50vw;
+    height: 60%;
     background-color: #18181b;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.423);
-    border-radius: 5px 0px 0px 5px;
-    font-size: 14px;
+    border-radius: 1vw 0vw 0vw 1vw;
+    font-size: 2vw;
     font-weight: 500;
-    padding-left: 10px;
+    padding-left: 1.5vw;
 }
 
 header input:hover {
@@ -166,16 +161,17 @@ header input:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 2.5vw;
+    height: 3.2vw;
+    padding-left: 0.3vw;
 }
 
 header button {
-    width: 45px;
-    height: 75%;
     background-color: #2f2f35;
     border: none;
     border-radius: 0px 5px 5px 0px;
     color: white;
+    font-size: 1.2vw;
 }
 
 header button:hover {
@@ -190,23 +186,22 @@ header button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90px;
-    height: 30px;
-    margin-right: 5px;
+    margin-right: 1vw;
+    padding: 1vw;
     font-weight: 700;
-    border-radius: 5px;
+    border-radius: 1vw;
+     white-space: nowrap;
 }
 
 .header_right .but1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65px;
-    height: 30px;
+    width: 6vw;
+    height: 3vw;
     background-color: #9147ff;
-    margin-left: 5px;
     font-weight: 700;
-    border-radius: 5px;
+    border-radius: 1vw;
 }
 
 header .but1:hover {
@@ -221,12 +216,13 @@ header .but1:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 1vw;
     background-color: transparent;
     color: white;
-    margin-left: 10px;
-    width: 30px;
-    height: 30px;
+    margin-left: 1vw;
+    width: 3vw;
+    height: 3vw;
+    font-size: 3vw;
     font-variation-settings:
     'FILL' 0,
     'wght' 300,
@@ -248,14 +244,15 @@ header .but1:active {
     justify-content: center;
     align-items: center;
     color: white;
-    margin: 10px;
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    border-radius: 5px;
+    margin: 1vw;
+    width: 3vw;
+    height: 3vw;
+    font-size: 2vw;
+    border-radius: 1vw;
 }
 
 .but_crown {
-    width: 30px !important;
+    width: 3vw !important;
+    height: 3vw !important;
     background-color: transparent;
 }
