@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0e0e10;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    height: 50px;
+    max-height: 4.5vw;
+    background-color: #3b3b44;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    height: 100%;
+    width: 13em;
+    background-color: white;
+
+}
+
+.headerCenter {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background-color: yellow;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    height: 100%;
+    width: 17em;
+    background-color: pink;
+}
+
+main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* TODO: Burayı sonra düzelt. */;
+    padding-top: 50px;
+}
+
+.containerLeft {
+    display: block;
+    width: 18em;
+    height: 100%;
+    background-color: #d6d6d6;
+    overflow: hidden;
+}
+
+.headerLeft1 {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 20%;
+    background-color: blue;
+}
+
+.headerLeft2 {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 40%;
+    background-color: red;
+}
+
+.headerLeft3 {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 8%;
+    background-color: green;
+}
+
+.headerRight1 {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 10%;
+    background-color: blue;
+}
+
+.headerRight2 {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 25%;
+    background-color: red;
+}
+
+.headerRight3 {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 25%;
+    background-color: green;
+}
+
+.headerRight4 {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 10%;
+    background-color: blue;
+}
+
+.titleLeft {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 2em;
+    width: 95%;
+    margin: auto;
+    margin-top: 0.1em;
+    background-color: #1b857f;
+}
+
+.arrow-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    fill: white;
+    margin-left: 5em;
+    margin-top: 0.3em;
+}
+
+.arrow-button:hover {
+    background-color: #424249;
+}
+
+.arrow-button:active {
+    background-color: #2f2f35;
+}
+
+.channelList {
+    display: block;
+    width: 95%;
+    height: 90%;
+    background-color: #3f3a50;
+    margin: auto;
+}
+
+.channelBar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 2em;
+    background-color: #1e9750;
+    margin-bottom: 0.3em;
+}
+
+.channelLogoContainer, .channelLogoContainer img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.9em;
+    width: 2.1em;
+    background-color: #000000;
+}
+
+.channelLogoContainer img {
+    border-radius: 50%;
+}
+
+.channelNameBar {
+    display: block;
+    align-items: center;
+    justify-content: start;
+    height: 2em;
+    width: 9em;
+    background-color: #5aad16;
+}
+
+.channelName {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 1em;
+    width: 9em;
+    background-color: #ff0062;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.channelStreamName {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 1em;
+    width: 9em;
+    background-color: #00ffb3;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.channelLiveContainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 1.9em;
+    width: 3em;
+    background-color: #ff00ff;
+    overflow: hidden;
+}
+
+.channelLiveRedDotContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1em;
+    width: 1em;
+    background-color: #bae400;
+}
+
+.channelLiveViewerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 1em;
+    width: 2em;
+    margin-left: 0.1em;
+    background-color: #220b2236;
+}
+
+.channelLiveRedDot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0.5em;
+    width: 0.5em;
+    background-color: #ff0000;
+    border-radius: 50%;
+}
+
+.containerMain {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ff000054;
+    overflow: hidden;
+}
+
+.containerMainFirst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 19em;
+    margin-top: 1em;
+    background-color: #38030354;
+}
+
+.containerMainTitleFirst
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 2em;
+    width: 40%;
+    margin-top: 4em;
+    margin-left: 0;
+    background-color: #1b8580a1;
+}
+
+.containerMainSecond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 9em;
+    margin-top: 1em;
+    background-color: #38030354;
+    flex-wrap: wrap;
+}
+
+.stream {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+    background-color: #ff000054;
+    margin: 0.5em;
+}
+
+.signUpBar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 4em;
+    width: 100%;
+    margin-top: 1em;
+    margin-left: 0;
+    bottom: 0;
+    background-color: #1b8580;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    
+}
