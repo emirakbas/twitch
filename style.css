@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -17,7 +18,7 @@ header {
     max-width: 100%;
     height: 50px;
     max-height: 4.5vw;
-    background-color: #3b3b44;
+    background-color: #1f1f23;
 }
 
 .headerLeft {
@@ -27,16 +28,15 @@ header {
     gap: 5%;
     height: 100%;
     width: 13em;
-    background-color: white;
 
 }
 
 .headerCenter {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100%;
     width: 50%;
-    background-color: yellow;
 }
 
 .headerRight {
@@ -46,7 +46,6 @@ header {
     gap: 5%;
     height: 100%;
     width: 17em;
-    background-color: pink;
 }
 
 main {
@@ -66,60 +65,271 @@ main {
     overflow: hidden;
 }
 
-.headerLeft1 {
+.headerLeftLogoContainer {
     display: flex;
     align-items: center;
     height: 80%;
     width: 20%;
-    background-color: blue;
+    overflow: hidden;
 }
 
-.headerLeft2 {
+.icon-container {
+    color: #ab76fb;
+    width: 2em;
+    height: 2em;
+    max-width: 70%;
+    max-height: 100%;
+}
+
+.icon-container:active {
+   color: #ab76fb;
+}
+
+.bi-twitch path:nth-of-type(3) {
+    transform-origin: center center;
+    transition: transform 0.1s ease-in-out;
+}
+
+.animate {
+    animation: pulse 0.2s ease-in-out 2;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.5) translateY(-0.2em);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.headerCenter input {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 25em;
+    height: 2.4em;
+    border: 0.1em solid #2e2e33;
+    border-radius: 0.5em 0em 0em 0.5em;
+    background-color: #18181b;
+    color: white;
+    padding-left: 1em;
+    font-size: 1em;
+}
+
+.headerCenter input:hover {
+    border: 2px solid rgba(229, 215, 215, 0.549);
+}
+
+.headerCenter input:focus {
+    border-color: #ab76fb;
+    outline: none;
+    border: 3.5px solid #ab76fb;
+}
+
+.headerCenter .bx-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.9em;
+    border-radius: 0px 3px 3px 0px;
+    cursor: pointer;
+}
+
+.headerCenter button {
+    background-color: #26262c;
+    border: none;
+    border-radius: 0rem 0.2rem 0.2rem 0rem;
+    padding: 0.4rem;
+}
+
+.headerCenter button:hover {
+    background-color: #2e2e33;
+}
+
+.headerCenter button:active {
+    background-color: #1f1f23;
+}
+
+.headerLeftTextContainer {
     display: flex;
     align-items: center;
     height: 80%;
     width: 40%;
-    background-color: red;
+    font-size: 1.5em;
+    color: white;
 }
 
-.headerLeft3 {
+.headerLeftTextContainer a {
+    text-decoration: none;
+    color: white;
+}
+
+.headerLeftTextContainer a:hover {
+    color: #ab76fb;
+}
+
+.headerLeftButtonContainer {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 80%;
     width: 8%;
-    background-color: green;
+    color: white;
 }
 
-.headerRight1 {
+.headerLeftButtonContainer button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 0.2em;
+}
+
+.headerLeftButtonContainer button:hover {
+    background-color: #2e2e33;
+}
+
+.headerLeftButtonContainer button:active {
+    background-color: #1f1f23;
+}
+
+.headerRightCrownContainer {
     display: flex;
     align-items: center;
     height: 80%;
     width: 10%;
-    background-color: blue;
 }
 
-.headerRight2 {
+.headerRightCrownContainer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.2em;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.headerRightCrownContainer button:hover {
+    background-color: #424249;
+}
+
+.headerRightCrownContainer button:active {
+    background-color: #1f1f23;
+}
+
+.bx-crown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    height: 1.5em;
+    color: white;
+}
+
+.headerRightSignInButtonContainer {
     display: flex;
     align-items: center;
     height: 80%;
-    width: 25%;
-    background-color: red;
+    width: 30%;
 }
 
-.headerRight3 {
+.headerRightSignUpButtonContainer {
     display: flex;
     align-items: center;
     height: 80%;
-    width: 25%;
-    background-color: green;
+    width: 30%;
 }
 
-.headerRight4 {
+.headerRightSignInButtonContainer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #424249;
+    border: none;
+    color: white;
+    width: 7em;
+    height: 2.3em;
+    border-radius: 0.2em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.headerRightSignInButtonContainer button:hover {
+    background-color: #2f2f35;
+}
+
+.headerRightSignInButtonContainer button:active {
+    background-color: #1f1f23;
+}
+
+.headerRightSignUpButtonContainer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9147ff;
+    border: none;
+    color: white;
+    width: 5em;
+    height: 2.3em;
+    border-radius: 0.2em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.headerRightSignUpButtonContainer button:hover {
+    background-color: #7a3ec5;
+}
+
+.headerRightSignUpButtonContainer button:active {
+    background-color: #6a2f9f;
+}
+
+.headerRightPersonContainer {
     display: flex;
     align-items: center;
     height: 80%;
-    width: 10%;
-    background-color: blue;
+    width: 15%;
+    margin-left: -1em;
+}
+
+.headerRightPersonContainer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.2em;
+    cursor: pointer;
+    color: white;
+}
+
+.headerRightPersonContainer button:hover {
+    background-color: #424249;
+}
+
+.headerRightPersonContainer button:active {
+    background-color: #1f1f23;
+}
+
+.material-symbols-outlined { /* Bu sınıf person'un özelliklerini ayarlar. */
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 350,
+  'GRAD' 0,
+  'opsz' 29
 }
 
 .titleLeftPanel {
