@@ -24,6 +24,7 @@ header {
     background-color: #18181b;
     box-shadow: 0em 0em 0.1em 0.1em #000000;
     font-family: "Roboto", sans-serif;
+    z-index: 100;
 }
 
 .headerLeft {
@@ -69,6 +70,7 @@ main {
     background-color: #1f1f23;
     overflow: hidden;
     font-family: "Roboto", sans-serif;
+    z-index: 90;
 }
 
 .headerLeftLogoContainer {
@@ -576,6 +578,7 @@ main {
     bottom: 0;
     background-color: #1b8580;
     overflow: hidden;
+    z-index: 100;
 }
 
 .signUpBarLeftContainer {
@@ -654,6 +657,88 @@ main {
 
 .signUpBarButton button:active {
     background-color: #cccccc;
+}
+
+.carouselSlider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    background-color: rgb(46, 46, 35);
+    overflow: hidden;
+    z-index: 29;
+}
+
+.carouselFirstContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45em;
+    height: 19em;
+    background-color: rgb(157, 157, 9);
+    overflow: hidden;
+    z-index: 28;
+}
+
+.carouselSecondContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45em;
+    height: 19em;
+    background-color: rgb(157, 24, 9);
+    overflow: hidden;
+    z-index: 28;
+    margin-right: 25%;
+    scale: 0.8;
+    z-index: 27;
+}
+
+.carouselThirdContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45em;
+    height: 19em;
+    background-color: rgb(73, 9, 157);
+    overflow: hidden;
+    z-index: 28;
+    margin-left: 25%;
+    scale: 0.8;
+    z-index: 27;
+}
+
+.carouselLeftButtonContainer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    width: 2em;
+    background-color: #1b8580;
+    border-radius: 50%;
+    margin-right: 95%;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.carouselRightButtonContainer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    width: 2em;
+    background-color: #1b8580;
+    border-radius: 50%;
+    margin-left: 95%;
+    cursor: pointer;
+    z-index: 30;
 }
 
 @media screen and (max-width: 768px) {
