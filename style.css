@@ -59,7 +59,7 @@ main {
     justify-content: start;
     align-items: center;
     width: 100%;
-    height: 100vh; /* TODO: Burayı sonra düzelt. */;
+    height: 300vh; /* TODO: Burayı sonra düzelt. */
     padding-top: 3em; /*Media query ile düzenlenecek. Küçültünce header'ın altında boşluk oluşuyor.*/
 }
 
@@ -384,6 +384,10 @@ main {
     background-color: #2f2f35;
 }
 
+.containerLeftFixed {
+    position: fixed;
+}
+
 .channelList {
     display: block;
     width: 90%;
@@ -524,7 +528,6 @@ main {
     width: 100%;
     height: 100%;
     background-color: #ff000017;
-    overflow: hidden;
 }
 
 .containerMainFirst {
@@ -557,17 +560,18 @@ main {
     height: 9em;
     margin-top: 1em;
     background-color: #38030354;
-    flex-wrap: wrap;
 }
 
 .stream {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 100%;
+    width: 19em;
+    height: 10em;
     background-color: #ff000054;
-    margin: 0.5em;
+    margin-left: 1em;
+    margin-top: 2em;
+    overflow: hidden;
 }
 
 .signUpBar {
@@ -581,7 +585,6 @@ main {
     margin-left: 0;
     bottom: 0;
     background-color: #1b8580;
-    overflow: hidden;
     z-index: 100;
 }
 
@@ -761,6 +764,33 @@ main {
     background-color: #0e0e10;
 }
 
-@media screen and (max-width: 768px) {
-    
+.containerMainLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 1em;
+    margin-left: 4em;
+    margin-top: 5em;
+    background-color: gray;
+}
+
+.containerMainThird {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 9em;
+    margin-top: 1em;
+    background-color: #38030354;
+}
+
+
+@media screen and (max-width: 1472px) {
+    .stream3 {
+        display: none;
+    }
+    .stream {
+
+    }
 }
