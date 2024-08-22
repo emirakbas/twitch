@@ -975,3 +975,16 @@ main {
         display: none;
     }
 }
+
+/* Yapılması ve düzenlenmesi gereken özellikler:
+1-Videoların üzerine gelince sol ve alt köşelerin renklenmesi.
+2-Videoların üzerindeki "Canlı" yazısı ve altında "0B İzleyici" yazısı.
+3-Tıklanabilir nesnelerin üzerine gelince çıkan alt/açıklama yazısı.
+4-Media Query ile yapılması gereken düzenlemeler.
+5-Ekranı çok yakınlaştırınca öğelerin birbirine girmesi.
+6-Ekran çok yakınlaştırıldığı zaman sol paneldeki kanalların hover özelliğindeki bozulmanın giderilmesi.
+7-Sol paneli kapatma butonuna basınca panelin küçülmesi.
+8-Carousel Slider'ın çalışır hale getirilmesi.
+9-Main container içerisindeki videoların margin top özellikleri ilk satırdan sonra çok fazla görünüyor azaltılması gerek.
+10-İsteğe bağlı: Twitch logosunun üzerine gelince sağ üste kayması.
+*/
